@@ -1,0 +1,249 @@
+body {
+	/*background-color: rgb(90, 153, 126);*/
+	margin: 0;
+	background-color: rgb(80, 127, 136);
+	color: rgb(255,228,196);
+	font-family: 'Lora', serif;
+	font-weight: 400;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 400;
+	font-style: italic;
+	letter-spacing: .5px;
+	line-height: 1;
+	color: #1d1d1d;
+}
+
+h1 {
+	font-size: 60px;
+	margin: 0 0 10px;
+}
+
+h2 {
+	font-size: 40px;
+	margin: 0 0 30px;
+}
+
+h3 {
+	font-size: 25px;
+	font-style: normal;
+	margin: 30px 0 20px;
+}
+
+header h3 {
+	margin: 15px 0 0;
+}
+
+h4 {
+	font-size: 20px;
+	margin: 0;
+}
+
+footer h4 {
+	color: rgb(255,228,196);
+}
+
+p,
+.quote-author {
+	font-size: 16px;
+  line-height: 24px;
+}
+
+#tribute-info p:first-of-type:first-letter {
+	float: left;
+  font-size: 60px;
+	font-weight: normal;
+	font-style: italic;
+	text-transform: lowercase;
+  line-height: 1;
+  margin-right: 4px;
+}
+
+/* Gets rid of that annoying bottom margin on the last p child */
+p:last-child {
+	margin-bottom: 0;
+}
+
+a {
+	color: #1d1d1d;
+	text-decoration: none;
+  border-bottom: 1px dashed #000;
+}
+
+footer a {
+	border-bottom: 1px dashed rgb(80, 127, 136);
+}
+
+a:visited {
+	color: #1d1d1d;
+}
+
+footer a:visited {
+	color: rgb(80, 127, 136);
+}
+
+a:hover,
+footer a:hover {
+	color: #fff;
+	border-bottom: 1px dashed #fff;
+}
+
+blockquote {
+	font-size: 23px;
+	font-style: italic;
+	line-height: 30px;
+	letter-spacing: .5px;
+	color: #1d1d1d;
+	border-top: 1px solid #1d1d1d;
+	border-bottom: 1px solid #1d1d1d;
+	margin: 50px 0;
+	padding: 0 0 40px;
+}
+
+blockquote::before {
+	content:'\201C';
+	font-size: 150px;
+	position: relative;
+  top: 75px;
+	right: 11px;
+}
+
+.quote-author {
+	display: inline-block;
+	margin-top: 15px;
+	text-align: right;
+}
+
+.caption {
+	font-size: 14px;
+	font-style: italic;
+	margin-top: 10px;
+}
+
+/* Structure + General Styles */
+
+main,
+#read-more {
+	margin: 0 auto;
+}
+
+header {
+	border-bottom: 1px solid #1d1d1d;
+	padding-bottom: 60px;
+}
+
+header,
+#tribute-info {
+	margin: 60px 60px;
+}
+
+footer,
+header,
+#biography,
+#read-more {
+	text-align: center;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.right-justify {
+	float: right;
+	margin: 0 0 15px 30px;
+}
+
+/* Main */
+
+#silhouette {
+	width: 165px;
+	margin: 0 0 15px;
+	box-sizing: border-box;
+	border: 1px dashed #1d1d1d;
+	border-radius: 50%;
+	padding: 25px;
+	margin: 0 auto;
+}
+
+.filter-charcoal {
+	filter: invert(10%) sepia(11%) saturate(0%) hue-rotate(226deg) brightness(109%) contrast(98%);
+}
+
+.filter-charcoal:hover {
+	filter: invert(84%) sepia(32%) saturate(302%) hue-rotate(334deg) brightness(102%) contrast(106%);
+	transition: width 1s;
+}
+
+#biography {
+	margin-bottom: 40px;
+}
+
+@media (min-width: 769px) {
+	#tribute-info {
+		display: grid;
+		grid-template-columns: auto 30%;
+		grid-column-gap: 60px;
+	}
+}
+
+@media (max-width: 768px) {
+	#book-list {
+		margin-top: 60px;
+	}
+}
+
+.container:last-child {
+	border-left: 1px solid #1d1d1d;
+	border-right: 1px solid #1d1d1d;
+	padding: 0 40px;
+}
+
+#portrait {
+	width: 50%;
+	border-radius: 50%;
+}
+
+#portrait img {
+	box-sizing: border-box;
+	border: 12px solid #fff;
+}
+
+@media (max-width: 480px) {
+	#portrait {
+		width: 100%;
+		border-radius: 50%;
+		margin-bottom:50px;
+	}
+}
+
+#quote {
+	background-color: rgb(255,228,196);
+	color: rgb(80, 127, 136);
+}
+
+#img-div {
+	margin: 40px 0 0;
+}
+
+#image {
+	max-width: 100%;
+}
+
+/* Footer */
+
+footer {
+	margin: 60px 0 0;
+	background-color: #1d1d1d;
+	padding: 50px 0 60px;
+}
+
+#read-more {
+	margin: 0 60px;
+}
