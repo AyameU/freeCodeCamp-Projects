@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC Survey Page - Book Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Oxygen+Mono&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+	<main>
+	<h1 id="title">Sign Up For Our Book Club</h1>
+	<p id="description">Sign up for our weekly book club. We'll have a new book ready for you to pick up at your local library every week. Discuss the book online or at one of our <a href="#">brown bag lunch events</a>. This a free program offered for any member of the public library.</p>
+		<p>Fill out the form below to sign-up. Please check your inbox (and spam folder) for a confirmation email after you submit the form.</p>
+	<form id="survey-form" action="#">
+	
+		<div class="flexbox">
+			<label id="name-label" for="name"><p>First Name</p></label>
+			<input id="name" type="text" placeholder="Enter your first name" required>
+			<label id="lname-label" for="lname"><p>Last Name</p></label>
+			<input id="lname" type="text" placeholder="Enter your last name" required>
+		</div>
+		
+		<label id="email-label" for="email"><p>Email</p></label>
+		<input id="email" type="email" placeholder="Enter your email address" required>
+		
+		<label id="number-label" for="number"><p>Library Card Number (12345)</p></label>
+		<input id="number" type="number" min="10000" max="99999" placeholder="Enter your library card number" required>
+		
+		<label id="dropdown-label" for="nearest-location"><p>Choose the nearest pickup location</p></label>
+		<select id="dropdown" type="select" required>
+			<option value="default">Select your nearest location</option>
+			<option value="peachtree">Peachtree Memorial Library</option>
+			<option value="kincaid">Albert F. Kincaid Library</option>
+			<option value="hanover">Hanover Public Library</option>
+		</select>
+		
+		<div class="section flexbox">
+			<label id="checkbox-label"><p>What genres are you interested in? (Pick as many as you'd like.)</p></label>
+			<div class="flex">
+			<label class="check-label flex-row" for="nonfiction">
+				<input id="nonfiction" type="checkbox" name="book-genres" value="nonfiction">Non-fiction
+			</label>
+			<label class="check-label flex-row" for="horror">
+				<input id="horror" type="checkbox" name="book-genres" value="horror">Horror
+			</label>
+			<label class="check-label flex-row" for="mystery">
+				<input id="mystery" type="checkbox" name="book-genres" value="mystery">Mystery
+			</label>
+			<label class="check-label flex-row" for="fantasy">
+				<input id="fantasy" type="checkbox" name="book-genres" value="fantasy">Fantasy
+			</label>
+			<label class="check-label flex-row" for="sciencefiction">
+				<input id="sciencefiction" type="checkbox" name="book-genres" value="sciencefiction">Science Fiction
+			</label>
+			<label class="check-label flex-row" for="romance">
+				<input id="romance" type="checkbox" name="book-genres" value="romance">Romance
+			</label>
+				</div>
+		</div>
+		
+		<div class="section flexbox">
+			<label id="radio-label"><p>Would you like to receive our weekly eNewsletter. (Once you've signed up, you can opt out at any time.</p></label>
+			<label class="flex-row" for="radio1">
+				<input id="radio1" type="radio" name="newsletter-options" value="no" checked>No
+			</label>
+			<label class="flex-row" for="radio2">
+				<input id="radio2" type="radio" name="newsletter-options" value="yes">Yes
+			</label>
+		</div>
+		
+		<label id="textarea-label"><p>Add a note:</p></label>
+		<textarea id="textarea" placeholder="Add a note to your order" rows="10"></textarea>
+		
+		<button id="submit" type="submit">Submit</button>
+	</form>
+	</main>
+	<footer>
+		<p id="copyright">Fonts: <a href="https://fonts.google.com/specimen/Oxygen+Mono" target="_blank">Oxygen Mono</a> + <a href="https://fonts.google.com/specimen/Major+Mono+Display" target="_blank">Major Mono Display</a> from Google Fonts.</p>
+	</footer>
+</body>
+<!-- partial -->
+  <script src='https://kit.fontawesome.com/e3747d6e16.js'></script>
+</body>
+</html>
