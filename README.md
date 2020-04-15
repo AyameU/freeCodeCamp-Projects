@@ -1,2 +1,2 @@
 # freeCodeCamp-Projects
-All of my completed FFC projects, organized by course
+All of my completed FFC projects, organized by course.
