@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC Product Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+	<header id="header">
+		<div class="container logo-header flex">
+			<figure><img id="header-img" src="https://github.com/AyameU/freeCodeCamp-Projects/blob/master/Responsive-Web-Design/Art-ProductPage/img/FakeGallery-Logo.png?raw=true" alt="Fake Gallery Logo"></figure>
+			<nav id="nav-bar">
+				<a class="nav-link" href="#hero-image">The Painting</a>
+				<a class="nav-link" href="#cta">About the Painting</a>
+				<a class="nav-link" href="#product-pricing">Pricing</a>
+				<a class="nav-link" href="#footer">Contact Us</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="spacer"></div>
+		<section id="hero-image" class="flex">
+			<div class="container">
+				<p>Laurence Alma-Tadema, 1881, Oil on Panel</p>
+				<h1 id="title">Sappho & Alcaeus</h1>
+			</div>
+		</section>
+
+		<section id="cta" class="container">
+			<h2>On sale for the first time since 1881!</h2>
+			<p>Don't miss out on this once-in-a-lifetime chance to own an classic Victorian masterpiece. This exquisite painting hasn't been on the market since the 19th century. Your purchase will come with a certificate of authenticity.</p>
+		</section>
+
+		<div class="container flex">
+			<section id="product">
+				<h3>About the Painting</h3>
+				<p id="description">In 1870, the Dutch-born, Belgian-trained artist Alma-Tadema moved to London, where he found a ready market among the wealthy middle classes for paintings re-creating scenes of domestic life in imperial Roman times. In this work, however, he turns to early Greece to illustrate a passage by the ancient Greek poet Hermesianax (active ca. 330 BC) preserved in Atheneaus, Deipnosophistae, "Banquet of the Learned," book 2, line 598. On the island of Lesbos (Mytilene), in the late 7th century BC, Sappho and her companions listen rapturously as the poet Alcaeus plays a "kithara." Striving for verisimilitude, Alma-Tadema copied the marble seating of the Theater of Dionysos in Athens, although he substituted the names of members of Sappho's sorority for those of the officials incised on the Athenian prototype.</p>
+				<section id="product-details">
+				<h4>Details</h4>
+					<p class="small">Title: Sappho and Alcaeus<br>
+					Date Created: 1881<br>
+					Physical Dimensions: w122 x h104.1402 cm<br>
+					Type: oil paintings; panel paintings<br>
+					Rights: Acquired by William T. Walters, after 1881, http://creativecommons.org/licenses/by-nc-sa/3.0/<br>
+					Medium: oil on panel<br>
+					Provenance: William T. Walters, Baltimore, after 1881, by purchase [Deschamps as agent]; Henry Walters, Baltimore, 1894, by inheritance; Walters Art Museum, 1931, by bequest.<br>
+					Inscriptions: [Signature] Lower right: L. Alma Tadema; [Inscription] Lower right: Op CCXXII<br>
+					Artist: Sir Lawrence Alma-Tadema, R.A., O.M.</p>
+				<p>Text: <a href="https://artsandculture.google.com/asset/cgGJhGb6MjVeAw" target="_blank">Google Arts & Culture</a> & <a href="https://en.wikipedia.org/wiki/Lawrence_Alma-Tadema" target="_blank">Wikipedia</a>.</p>
+			</section>
+		</section>
+
+			<section id="artist" class="sidebar">
+				<h3>About the Artist</h3>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Lawrence_Alma-Tadema_1870_%282%29.jpg" alt="Photograph of famed Victorian painter, Sir Lawrence Alma-Tadema">
+				<p>Sir Lawrence Alma-Tadema <i>(8 January 1836 – 25 June 1912)</i> was a Dutch painter of special British denizenship. Born in Dronrijp, the Netherlands, and trained at the Royal Academy of Antwerp, Belgium, he settled in England in 1870 and spent the rest of his life there. A classical-subject painter, he became famous for his depictions of the luxury and decadence of the Roman Empire, with languorous figures set in fabulous marbled interiors or against a backdrop of dazzling blue Mediterranean Sea and sky. Alma-Tadema was considered one of the most popular Victorian painters. Though admired during his lifetime for his draftsmanship and depictions of Classical antiquity, his work fell into disrepute after his death, and only since the 1960s has it been re-evaluated for its importance within nineteenth-century British art.
+				</p>
+			</section>
+		</div>
+
+		<section id="product-pricing" class="flex">
+			<div class="half">
+				<h3>Pricing</h3>
+				<section class="flex">
+					<p><b>Painting with Gilt Frame</b><br> $13,999.99</p>
+					<p><b>Painting without Frame</b><br> $10,999.99</p>
+					<p><b>Large Giclée Print</b><br> $109.99</p>
+				</section>
+				<p><b>Shipping</b></p>
+					<p>If you can't pick up your order at our gallery, we ship worldwide! Please contact us for a quote. Insurance is mandatory and will be added to the final total.</p>
+			</div>
+
+			<div class="half">
+				<div style="padding:56.25% 0 0 0;position:relative;"><iframe id="video" src="https://player.vimeo.com/video/100497106?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+			</div>
+		</section>
+	</main>
+
+	<footer id="footer">
+		<section class="container flex">
+			<section>
+				<h4>Contact Us</h4>
+				<p>Faux Gallery<br>
+					18-32 Rue de la Paix<br>
+					75002 Paris<br>
+					France</p>
+			</section>
+
+			<form id="form" action="https://www.freecodecamp.com/email-submit">
+				<h4>Stay in the know ...</h4>
+				<input id="name" type="text" placeholder="Enter your Name" required></input>
+				<input id="email" type="email" name="email" placeholder="Enter your Email" required></input>
+				<input id="submit" type="submit" value="Sign Up"></input>
+			</form>
+		</section>
+	</footer>
+</body>
+<!-- partial -->
+</body>
+</html>
